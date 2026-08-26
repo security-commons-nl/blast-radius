@@ -95,7 +95,7 @@ pip install -r requirements-dev.txt
 python -m pytest tests -q
 ```
 
-34 tests over parsers, analyse en rapport, inclusief een regressietest op de klik-op-proces-keten.
+35 tests over parsers, analyse en rapport, inclusief een regressietest op de klik-op-proces-keten.
 
 ## Opbouw
 
@@ -110,3 +110,12 @@ blastradius/
 testdata/       een verzonnen gemeentelijk landschap (json en csv)
 tests/          pytest
 ```
+
+## Licentie en bijdragen
+
+Open source onder de EUPL v1.2 (zie `LICENSE`). Onderdeel van Security Commons NL
+(github.com/security-commons-nl): gratis, regelgebaseerde tooling waarmee publieke
+organisaties zichzelf kunnen toetsen. Bevindingen komen uit controleerbare regels, niet
+uit een black box; waar AI wordt ingezet (de optionele duiding) staat dat er duidelijk bij.
+
+Meedenken, een bevinding delen of voortbouwen: open een issue of een pull request.
