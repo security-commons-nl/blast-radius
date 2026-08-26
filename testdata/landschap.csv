@@ -1,0 +1,7 @@
+from,from_label,from_type,to,to_label,to_type,relatie
+ci-netwerk,netwerk-core (kernswitch),ci,ci-db-brp,db-brp01 (database),ci,ondersteunt
+ci-netwerk,netwerk-core (kernswitch),ci,ci-app-web,app-web01 (webserver),ci,ondersteunt
+ci-db-brp,db-brp01 (database),ci,app-brp,BRP,app,ondersteunt
+ci-app-web,app-web01 (webserver),ci,app-portaal,Burgerportaal,app,ondersteunt
+app-brp,BRP,app,proc-paspoort,Paspoortuitgifte,proces,ondersteunt
+app-portaal,Burgerportaal,app,proc-paspoort,Paspoortuitgifte,proces,ondersteunt
