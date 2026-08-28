@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  # Tests via de herbruikbare workflow in security-commons-nl/.github.
+  tests:
+    uses: security-commons-nl/.github/.github/workflows/python-ci.yml@main
+    with:
+      python-version: "3.12"
+      test-command: "pytest tests/ -v"
+
+  # Documentatie-compliance conform DOCUMENTATION-STANDARD.md. README.md en
+  # HANDLEIDING.md dekken gebruik, architectuur en configuratie samen, dus de
+  # losse docs/-bestanden zijn hier niet vereist.
+  docs:
+    uses: security-commons-nl/.github/.github/workflows/doc-compliance.yml@main
+    with:
+      require-gebruik: false
+      require-architectuur: false
+      require-configuratie: false
