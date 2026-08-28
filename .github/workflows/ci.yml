@@ -12,7 +12,9 @@ jobs:
     uses: security-commons-nl/.github/.github/workflows/python-ci.yml@main
     with:
       python-version: "3.12"
-      test-command: "pytest tests/ -v"
+      # python -m pytest zet de projectroot in sys.path, zodat het eigen
+      # pakket importeerbaar is zonder installatie.
+      test-command: "python -m pytest tests/ -v"
 
   # Documentatie-compliance conform DOCUMENTATION-STANDARD.md. README.md en
   # HANDLEIDING.md dekken gebruik, architectuur en configuratie samen, dus de
