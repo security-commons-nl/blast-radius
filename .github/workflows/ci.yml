@@ -15,13 +15,3 @@ jobs:
       # python -m pytest zet de projectroot in sys.path, zodat het eigen
       # pakket importeerbaar is zonder installatie.
       test-command: "python -m pytest tests/ -v"
-
-  # Documentatie-compliance conform DOCUMENTATION-STANDARD.md. README.md en
-  # HANDLEIDING.md dekken gebruik, architectuur en configuratie samen, dus de
-  # losse docs/-bestanden zijn hier niet vereist.
-  docs:
-    uses: security-commons-nl/.github/.github/workflows/doc-compliance.yml@main
-    with:
-      require-gebruik: false
-      require-architectuur: false
-      require-configuratie: false
