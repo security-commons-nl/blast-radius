@@ -1,5 +1,12 @@
 # blast-radius
 
+> **Deze repo is gearchiveerd (03-09-2026).** De analyse leeft verder in
+> **[procescheck](https://security-commons-nl.github.io/procescheck/)**, tab *Blast radius*: dezelfde
+> rekenregels, hetzelfde importformaat, maar nu op de processen en applicaties die je daar toch al
+> vastlegt. Reden: de vraag "wat valt er om" gaat over processen, en een scanner die een vraag op een
+> export beantwoordt is geen apart project maar een bron plus regelset in het instrument dat over die
+> eenheid gaat (besluit *lichte commons*, 02-09-2026). De code hier blijft leesbaar als naslag.
+
 Wat valt er om als dit uitvalt? De blast radius van je landschap, uit een export die je al hebt.
 
 Status: prototype. Werkt en is te draaien, zonder belofte over volledigheid of onderhoud.
